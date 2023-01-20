@@ -28,9 +28,6 @@ $(function () {
                     })
                 }
         })
-
-  
-
    //récuperation des facture pour affichage au chargement 
         getBills();
     function getBills() {
@@ -39,8 +36,8 @@ $(function () {
             type:'post',
             data: {action:'fetch'},
             success:function (response) {
-               $("#orderTable").html(response);
-               $('table').DataTable();   
+            $("#orderTable").html(response);
+            $('table').DataTable();   
             }
         })
     }
@@ -100,7 +97,6 @@ $(function () {
 
     $("body").on('click','.infoBtn',function(e){
         e.preventDefault();
-
         $.ajax({
             url:'process.php',
             type:'post',
