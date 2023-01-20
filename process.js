@@ -85,7 +85,7 @@ $(function () {
                 success:function (response) {
                     // disparaitre modal
                  $("#updatmodal").modal("hide"); 
-                 console.log(response);
+                 
                 // afficher message sweet alert
                 Swal.fire({
                     icon: 'success',
